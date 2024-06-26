@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fe4a68;
+}
+.header {
+  max-width: 1022px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.header ul li {
+  padding: 0 10px;
+}
+.header ul li a {
+  font-size: 18px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all;
+  font-weight: bold;
+  transition-delay: 1ms;
+  color: #fff;
+}
+.header ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(./images/banner2.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text p {
+  font-size: 25px;
+  color: #000;
+  font-weight: bolder;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.hero-text h1 {
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.hero button {
+  padding: 10px 50px;
+  outline: none;
+  border: none;
+  background-color: #fe4a68;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  text-transform: uppercase;
+  transition: all ease-in-out;
+  transition-delay: 0.25s;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #fe4a68;
+  color: #fff;
+  border-radius: 20px;
+}
+/* product Seciton */
+
+section {
+  padding-top: 50px;
+}
+.product {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  width: 300px;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 50px;
+}
+
+.product-item img {
+  width: 300px;
+  border-radius: 50%;
+  height: 300px;
+  margin: 10px;
+}
+.product-item h3 {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.product-item p {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px auto;
+  text-align: center;
+}
+.product-item button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #08d259;
+  font-size: 22px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.product-item button:hover {
+  background-color: #03b249;
+}
+
+/* Gallary Section */
+
+.gallery {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  width: 300px;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 50px;
+}
+.gallery-item img {
+  width: 350px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(236, 240, 241);
+}
+.footer {
+  max-width: 1021px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  width: 300px;
+}
+.footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.footer-item > * {
+  padding: 5px;
+}
+.footer-item ul {
+  display: flex;
+}
+.footer-item ul a {
+  padding: 5px;
+  font-size: 18px;
+}
+.copyright {
+  background-color: #9a9898;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
